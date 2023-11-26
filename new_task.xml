@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="Ketikkan task baru"
+        android:imeOptions="actionDone" />
+
+    <EditText
+        android:id="@+id/newTaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskText"
+        android:layout_marginTop="16dp"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/newTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskDate"
+        android:layout_marginTop="16dp"
+        android:hint="Select Time"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/taskBaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskTime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="150dp"
+        android:background="@drawable/rounded_button_after"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/putih"
+        android:textSize="16sp" />
+
+</RelativeLayout>
